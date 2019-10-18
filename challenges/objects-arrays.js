@@ -265,8 +265,8 @@ pattern: "jackal, asiatic". Log the resut.
 
 //const lowCaseAnimalNames = [];
 
-const lowCaseAnimalNames = zooAnimals.map(function (item) {
-  return item.animal_name.toLowerCase();
+const lowCaseAnimalNames = zooAnimals.map(function (species) {
+  return species.animal_name.toLowerCase();
 });
 console.log(lowCaseAnimalNames);
 
@@ -280,8 +280,8 @@ only the animals with a population less than 5.
 */
 //const lowPopulationAnimals = [];
 
-const lowPopulationAnimals = zooAnimals.filter(function (animal) {
-  return animal.population < 5;
+const lowPopulationAnimals = zooAnimals.filter(function (species) {
+  return species.population < 5;
 });
 console.log(lowPopulationAnimals);
 
@@ -302,6 +302,7 @@ console.log(populationTotal);
 
 /*
 
-Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+Stretch: If you haven't already, convert your array method callbacks 
+into arrow functions.
 
 */
