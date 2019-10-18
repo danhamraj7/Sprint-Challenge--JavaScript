@@ -30,13 +30,63 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The forEach method is generally used to loop through the array elements.
+
+The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+
 2. What is the difference between a function and a method?
+
+A function typically contains a set of commands for a specific purpose which you want to run at a certain time is is invoke.When a function is called in a object it is refered to as a method.
 
 3. What is closure?
 
+It's code that's been identified elsewhere that we can use for later
+It is lexical === belong
+The variables that we have access too when the code is running.
+
 4. Describe the four rules of the 'this' keyword.
 
+   1. Window Binding
+When in the global scope, the value of “this” will be the 
+window / console Object.That is to say that if none of the other
+rules applies the THIS keyword defaults to the window object. Also 
+when "strict mode" is used it will be undefined.
+
+  2. Implicit Binding
+Whenever a function is called by a preceding dot, the object before 
+that dot is this.
+It is most common principle.
+Implict is automatic. It requires no settings.
+It only applies to objects with methods.
+When we log out the THIS keyword we get a different object each 
+time it’s run.
+
+ 3. New Binding
+Whenever a constructor function is used, THIS refers to the
+specific instance of the object that is created and returned by the 
+constructor function.
+A constructor function is a function that returns an object. It’s an 
+object creator.
+When we call it we have to use the NEW keyword.
+
+ 4. Explicit Binding 
+Whenever BIND, APPLY or CALL method is used THIS is fully and clearly 
+defined. It is used to invoke a function with a specific value for THIS.
+It tells a function what the ThIS keyword should be.
+It uses Call Apply and Bind
+CALL will immediately invoke the function whereas dot call passes in the 
+arguments one by one.
+APPLY will do the same as Call, except for dot Apply it passes the argument 
+in an array.
+BIND will pass in arguments one by one but it does not immediately invoke 
+the function but it returns a brand new function that can be used later.
+All of the above allows developers to explicitly state what the this 
+keyword is in any function.
+ 
+
 5. Why do we need super() in an extended class?
+
+Super replaces .call in prototype . As such it calls the attributes from the refered object.
 
 ## Project Set up
 
